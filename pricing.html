@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laravel Development &amp; Hosting Pricing | Waltham IT Solutions</title>
+    <meta
+      name="description"
+      content="Transparent pricing for Laravel web app development and managed hosting. UK-based development starting from £2,500. Managed hosting from £70/month."
+    />
+    <meta name="author" content="Waltham IT Solutions" />
+    <link rel="icon" href="../public/favicon.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      />
+    </noscript>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+      @theme {
+        --color-background: hsl(0 0% 100%);
+        --color-foreground: hsl(210 11% 15%);
+
+        --color-primary: hsl(210 100% 20%);
+        --color-primary-foreground: hsl(0 0% 100%);
+        --color-primary-light: hsl(210 100% 25%);
+
+        --color-secondary: hsl(174 77% 35%);
+        --color-secondary-foreground: hsl(0 0% 100%);
+        --color-secondary-light: hsl(174 77% 45%);
+
+        --color-muted: hsl(210 20% 96%);
+        --color-muted-foreground: hsl(210 6% 46%);
+        --color-muted-dark: hsl(210 15% 85%);
+
+        --color-card: hsl(0 0% 100%);
+        --color-card-foreground: hsl(210 11% 15%);
+        --color-card-border: hsl(210 20% 90%);
+
+        --color-accent: hsl(174 77% 35%);
+        --color-accent-foreground: hsl(0 0% 100%);
+        --color-accent-hover: hsl(174 77% 30%);
+
+        --color-border: hsl(210 20% 90%);
+        --color-input: hsl(210 20% 96%);
+        --color-ring: hsl(174 77% 35%);
+
+        --color-success: hsl(142 76% 36%);
+        --color-warning: hsl(38 92% 50%);
+        --color-destructive: hsl(0 84% 60%);
+        --color-destructive-foreground: hsl(0 0% 100%);
+      }
+
+      @layer base {
+        html {
+          font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial,
+            "Noto Sans", "Liberation Sans", sans-serif;
+        }
+        body {
+          @apply bg-background text-foreground;
+        }
+        :focus-visible {
+          outline: 2px solid theme(colors.ring);
+          outline-offset: 2px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Nav -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
+      <div class="mx-auto max-w-6xl px-6">
+        <div class="flex h-16 items-center justify-between">
+          <a href="./index.html" class="text-2xl font-bold text-primary hover:text-primary-light transition-colors">
+            Waltham IT Solutions
+          </a>
+
+          <div class="hidden md:flex items-center gap-8">
+            <a class="text-foreground hover:text-primary transition-colors font-medium" href="./index.html">Home</a>
+            <a class="text-foreground hover:text-primary transition-colors font-medium" href="./services.html">Services</a>
+            <a class="text-foreground hover:text-primary transition-colors font-medium" href="./pricing.html">Pricing</a>
+            <a class="text-foreground hover:text-primary transition-colors font-medium" href="./about.html">About</a>
+            <a class="text-foreground hover:text-primary transition-colors font-medium" href="./contact.html">Contact</a>
+          </div>
+
+          <div class="hidden md:flex items-center gap-4">
+            <div class="flex items-center gap-2 text-sm text-muted-foreground">
+              <span aria-hidden="true">☎</span>
+              <span>+44 (0) 123 456 7890</span>
+            </div>
+            <a
+              class="inline-flex items-center justify-center rounded-md bg-secondary px-4 py-2 text-sm font-semibold text-secondary-foreground shadow-sm hover:bg-accent-hover transition-colors"
+              href="./contact.html"
+            >
+              Get Support
+            </a>
+          </div>
+
+          <button
+            id="mobileMenuButton"
+            class="md:hidden inline-flex items-center justify-center rounded-md p-2 text-foreground hover:bg-muted transition-colors"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+            aria-controls="mobileMenu"
+          >
+            <span id="mobileMenuIcon">☰</span>
+          </button>
+        </div>
+
+        <div id="mobileMenu" class="hidden md:hidden border-t border-border">
+          <div class="py-4 space-y-4">
+            <a class="block py-2 text-foreground hover:text-primary transition-colors font-medium" href="./index.html">Home</a>
+            <a class="block py-2 text-foreground hover:text-primary transition-colors font-medium" href="./services.html">Services</a>
+            <a class="block py-2 text-foreground hover:text-primary transition-colors font-medium" href="./pricing.html">Pricing</a>
+            <a class="block py-2 text-foreground hover:text-primary transition-colors font-medium" href="./about.html">About</a>
+            <a class="block py-2 text-foreground hover:text-primary transition-colors font-medium" href="./contact.html">Contact</a>
+
+            <div class="pt-4 border-t border-border space-y-3">
+              <div class="flex items-center gap-2 text-sm text-muted-foreground">
+                <span aria-hidden="true">☎</span>
+                <span>+44 (0) 123 456 7890</span>
+              </div>
+              <a
+                class="inline-flex w-full items-center justify-center rounded-md bg-secondary px-4 py-2 text-sm font-semibold text-secondary-foreground shadow-sm hover:bg-accent-hover transition-colors"
+                href="./contact.html"
+              >
+                Get Support
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="min-h-screen">
+      <!-- Hero -->
+      <section class="pt-24 md:pt-32 pb-12 md:pb-16 bg-gradient-to-br from-background via-muted/30 to-background">
+        <div class="mx-auto max-w-6xl px-4 md:px-6 text-center">
+          <h1 class="text-3xl md:text-5xl font-bold text-foreground mb-4 md:mb-6">Web Development &amp; Managed Laravel Hosting</h1>
+          <p class="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-6 md:mb-8">
+            Reliable UK-based Laravel development, fully managed hosting, and scalable application builds.
+          </p>
+          <a
+            class="inline-flex items-center justify-center rounded-md bg-secondary px-6 py-3 text-base font-semibold text-secondary-foreground shadow-sm hover:bg-accent-hover transition-colors"
+            href="./contact.html"
+          >
+            Request a Quote
+          </a>
+        </div>
+      </section>
+
+      <!-- Development packages -->
+      <section class="py-20 bg-background">
+        <div class="mx-auto max-w-6xl px-6">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-foreground mb-4">Laravel App Development Packages</h2>
+            <p class="text-muted-foreground max-w-2xl mx-auto">
+              From MVPs to enterprise-grade SaaS platforms, we build scalable Laravel applications tailored to your needs.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <article class="relative overflow-hidden rounded-xl border border-border bg-card hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div class="p-6 text-center">
+                <div class="mx-auto w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-4" aria-hidden="true">
+                  <span class="text-primary text-xl" aria-hidden="true">⌘</span>
+                </div>
+                <h3 class="text-xl font-bold text-foreground">Starter App (MVP)</h3>
+                <div class="mt-4">
+                  <span class="text-2xl md:text-3xl font-bold text-primary">£2,500 – £5,000</span>
+                </div>
+              </div>
+              <div class="px-6 pb-6">
+                <ul class="space-y-3">
+                  <li class="flex items-start gap-3"><span class="text-success">✓</span><span class="text-sm text-muted-foreground">User login &amp; registration</span></li>
+                  <li class="flex items-start gap-3"><span class="text-success">✓</span><span class="text-sm text-muted-foreground">Basic admin dashboard</span></li>
+                  <li class="flex items-start gap-3"><span class="text-success">✓</span><span class="text-sm text-muted-foreground">CRUD features</span></li>
+                  <li class="flex items-start gap-3"><span class="text-success">✓</span><span class="text-sm text-muted-foreground">Role permissions (Admin/User)</span></li>
+                  <li class="flex items-start gap-3"><span class="text-success">✓</span><span class="text-sm text-muted-foreground">Form validation</span></li>
+                  <li class="flex items-start gap-3"><span class="text-success">✓</span><span class="text-sm text-muted-foreground">Responsive layout</span></li>
+                  <li class="flex items-start gap-3"><span class="text-success">✓</span><span class="text-sm text-muted-foreground">Deployed using Forge + VPS</span></li>
+                </ul>
+                <a class="mt-6 inline-flex w-full items-center justify-center rounded-md border border-border bg-white px-4 py-2 text-sm font-semibold text-foreground hover:border-primary/50 transition-colors" href="./contact.html">
+                  Get Started
+                </a>
+              </div>
+            </article>
+
+            <article class="relative overflow-hidden rounded-xl border border-primary bg-card shadow-lg ring-2 ring-primary/20 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div class="absolute top-0 right-0 bg-primary text-primary-foreground text-xs font-semibold px-3 py-1 rounded-bl-lg">Popular</div>
+              <div class="p-6 text-center">
+                <div class="mx-auto w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-4" aria-hidden="true">
+                  <span class="text-primary text-xl" aria-hidden="true">▣</span>
+                </div>
+                <h3 class="text-xl font-bold text-foreground">Mid-Size App</h3>
+                <div class="mt-4">
+                  <span class="text-2xl md:text-3xl font-bold text-primary">£5,000 – £12,000</span>
+                </div>
+              </div>
+              <div class="px-6 pb-6">
+                <ul class="space-y-3">
+                  <li class="flex items-start gap-3"><span class="text-success">✓</span><span class="text-sm text-muted-foreground">All Starter features</span></li>
+                  <li class="flex items-start gap-3"><span class="text-success">✓</span><span class="text-sm text-muted-foreground">File uploads / media management</span></li>
+                  <li class="flex items-start gap-3"><span class="text-success">✓</span><span class="text-sm text-muted-foreground">Payment processing (Stripe)</span></li>
+                  <li class="flex items-start gap-3"><span class="text-success">✓</span><span class="text-sm text-muted-foreground">Email notifications</span></li>
+                  <li class="flex items-start gap-3"><span class="text-success">✓</span><span class="text-sm text-muted-foreground">API endpoints</span></li>
+                  <li class="flex items-start gap-3"><span class="text-success">✓</span><span class="text-sm text-muted-foreground">Queue workers / scheduling</span></li>
+                  <li class="flex items-start gap-3"><span class="text-success">✓</span><span class="text-sm text-muted-foreground">Expanded CMS-style modules</span></li>
+                </ul>
+                <a class="mt-6 inline-flex w-full items-center justify-center rounded-md bg-secondary px-4 py-2 text-sm font-semibold text-secondary-foreground shadow-sm hover:bg-accent-hover transition-colors" href="./contact.html">
+                  Get Started
+                </a>
+              </div>
+            </article>
+
+            <article class="relative overflow-hidden rounded-xl border border-border bg-card hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div class="p-6 text-center">
+                <div class="mx-auto w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-4" aria-hidden="true">
+                  <span class="text-primary text-xl" aria-hidden="true">⚡</span>
+                </div>
+                <h3 class="text-xl font-bold text-foreground">Full SaaS / Enterprise Portal</h3>
+                <div class="mt-4">
+                  <span class="text-2xl md:text-3xl font-bold text-primary">£12,000 – £25,000+</span>
+                </div>
+              </div>
+              <div class="px-6 pb-6">
+                <ul class="space-y-3">
+                  <li class="flex items-start gap-3"><span class="text-success">✓</span><span class="text-sm text-muted-foreground">Multi-user teams and roles</span></li>
+                  <li class="flex items-start gap-3"><span class="text-success">✓</span><span class="text-sm text-muted-foreground">Subscriptions/billing</span></li>
+                  <li class="flex items-start gap-3"><span class="text-success">✓</span><span class="text-sm text-muted-foreground">Advanced dashboard modules</span></li>
+                  <li class="flex items-start gap-3"><span class="text-success">✓</span><span class="text-sm text-muted-foreground">Third-party API integrations</span></li>
+                  <li class="flex items-start gap-3"><span class="text-success">✓</span><span class="text-sm text-muted-foreground">Search filters &amp; reporting</span></li>
+                  <li class="flex items-start gap-3"><span class="text-success">✓</span><span class="text-sm text-muted-foreground">Multi-tenancy optional</span></li>
+                  <li class="flex items-start gap-3"><span class="text-success">✓</span><span class="text-sm text-muted-foreground">CI/CD and staging setup</span></li>
+                </ul>
+                <a class="mt-6 inline-flex w-full items-center justify-center rounded-md border border-border bg-white px-4 py-2 text-sm font-semibold text-foreground hover:border-primary/50 transition-colors" href="./contact.html">
+                  Get Started
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Hosting packages -->
+      <section class="py-20 bg-muted/30">
+        <div class="mx-auto max-w-6xl px-6">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-foreground mb-4">Managed Laravel Hosting</h2>
+            <p class="text-muted-foreground max-w-2xl mx-auto">
+              Powered by Laravel Forge and scalable VPS servers. We handle the infrastructure so you can focus on your business.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <article class="rounded-xl border border-border bg-card hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div class="p-6 text-center">
+                <h3 class="text-xl font-bold text-foreground">Starter Site Hosting</h3>
+                <div class="mt-4">
+                  <span class="text-2xl md:text-3xl font-bold text-primary">£70 – £110</span>
+                  <span class="text-muted-foreground text-sm">/ month</span>
+                </div>
+              </div>
+              <div class="px-6 pb-6">
+                <ul class="space-y-3 mb-4">
+                  <li class="flex items-start gap-3"><span class="text-success">✓</span><span class="text-sm text-muted-foreground">Small VPS (2–4 GB RAM)</span></li>
+                  <li class="flex items-start gap-3"><span class="text-success">✓</span><span class="text-sm text-muted-foreground">Laravel Forge server management</span></li>
+                  <li class="flex items-start gap-3"><span class="text-success">✓</span><span class="text-sm text-muted-foreground">SSL, deployments, backups</span></li>
+                  <li class="flex items-start gap-3"><span class="text-success">✓</span><span class="text-sm text-muted-foreground">Uptime monitoring</span></li>
+                  <li class="flex items-start gap-3"><span class="text-success">✓</span><span class="text-sm text-muted-foreground">Basic monthly maintenance</span></li>
+                </ul>
+                <div class="pt-4 border-t border-border">
+                  <p class="text-xs text-muted-foreground"><span class="font-semibold text-foreground">Ideal for:</span> Brochure sites or lightweight CMS installs.</p>
+                </div>
+                <a class="mt-6 inline-flex w-full items-center justify-center rounded-md border border-border bg-white px-4 py-2 text-sm font-semibold text-foreground hover:border-primary/50 transition-colors" href="./contact.html">
+                  Get Started
+                </a>
+              </div>
+            </article>
+
+            <article class="relative rounded-xl border border-primary bg-card shadow-lg ring-2 ring-primary/20 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div class="absolute top-0 right-0 bg-primary text-primary-foreground text-xs font-semibold px-3 py-1 rounded-bl-lg">Popular</div>
+              <div class="p-6 text-center">
+                <h3 class="text-xl font-bold text-foreground">Business CMS Hosting</h3>
+                <div class="mt-4">
+                  <span class="text-2xl md:text-3xl font-bold text-primary">£140 – £200</span>
+                  <span class="text-muted-foreground text-sm">/ month</span>
+                </div>
+              </div>
+              <div class="px-6 pb-6">
+                <ul class="space-y-3 mb-4">
+                  <li class="flex items-start gap-3"><span class="text-success">✓</span><span class="text-sm text-muted-foreground">Medium VPS for higher traffic</span></li>
+                  <li class="flex items-start gap-3"><span class="text-success">✓</span><span class="text-sm text-muted-foreground">Full Forge management</span></li>
+                  <li class="flex items-start gap-3"><span class="text-success">✓</span><span class="text-sm text-muted-foreground">Uptime monitoring + update checks</span></li>
+                  <li class="flex items-start gap-3"><span class="text-success">✓</span><span class="text-sm text-muted-foreground">Daily backups</span></li>
+                  <li class="flex items-start gap-3"><span class="text-success">✓</span><span class="text-sm text-muted-foreground">Basic priority support</span></li>
+                </ul>
+                <div class="pt-4 border-t border-border">
+                  <p class="text-xs text-muted-foreground"><span class="font-semibold text-foreground">Ideal for:</span> Company websites, news/blog sites, moderate traffic.</p>
+                </div>
+                <a class="mt-6 inline-flex w-full items-center justify-center rounded-md bg-secondary px-4 py-2 text-sm font-semibold text-secondary-foreground shadow-sm hover:bg-accent-hover transition-colors" href="./contact.html">
+                  Get Started
+                </a>
+              </div>
+            </article>
+
+            <article class="rounded-xl border border-border bg-card hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div class="p-6 text-center">
+                <h3 class="text-xl font-bold text-foreground">Web App / SaaS Hosting</h3>
+                <div class="mt-4">
+                  <span class="text-2xl md:text-3xl font-bold text-primary">£220 – £350+</span>
+                  <span class="text-muted-foreground text-sm">/ month</span>
+                </div>
+              </div>
+              <div class="px-6 pb-6">
+                <ul class="space-y-3 mb-4">
+                  <li class="flex items-start gap-3"><span class="text-success">✓</span><span class="text-sm text-muted-foreground">Larger VPS or dedicated instance</span></li>
+                  <li class="flex items-start gap-3"><span class="text-success">✓</span><span class="text-sm text-muted-foreground">Queue and scheduler setup</span></li>
+                  <li class="flex items-start gap-3"><span class="text-success">✓</span><span class="text-sm text-muted-foreground">Backup retention policies</span></li>
+                  <li class="flex items-start gap-3"><span class="text-success">✓</span><span class="text-sm text-muted-foreground">Performance optimisations</span></li>
+                  <li class="flex items-start gap-3"><span class="text-success">✓</span><span class="text-sm text-muted-foreground">Priority support &amp; maintenance</span></li>
+                </ul>
+                <div class="pt-4 border-t border-border">
+                  <p class="text-xs text-muted-foreground"><span class="font-semibold text-foreground">Ideal for:</span> Laravel apps with active users.</p>
+                </div>
+                <a class="mt-6 inline-flex w-full items-center justify-center rounded-md border border-border bg-white px-4 py-2 text-sm font-semibold text-foreground hover:border-primary/50 transition-colors" href="./contact.html">
+                  Get Started
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Add-ons -->
+      <section class="py-20 bg-background">
+        <div class="mx-auto max-w-6xl px-6">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-foreground mb-4">Add-On Services</h2>
+            <p class="text-muted-foreground max-w-2xl mx-auto">Enhance your project with additional services tailored to your requirements.</p>
+          </div>
+
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
+            <div class="flex items-center justify-between p-4 bg-card rounded-lg border border-border hover:border-primary/50 transition-colors">
+              <span class="font-medium text-foreground">SEO setup</span><span class="text-primary font-semibold text-sm">£150–£400</span>
+            </div>
+            <div class="flex items-center justify-between p-4 bg-card rounded-lg border border-border hover:border-primary/50 transition-colors">
+              <span class="font-medium text-foreground">Page content writing</span><span class="text-primary font-semibold text-sm">£40–£120/each</span>
+            </div>
+            <div class="flex items-center justify-between p-4 bg-card rounded-lg border border-border hover:border-primary/50 transition-colors">
+              <span class="font-medium text-foreground">PWA/mobile wrapper</span><span class="text-primary font-semibold text-sm">£1,000–£5,000</span>
+            </div>
+            <div class="flex items-center justify-between p-4 bg-card rounded-lg border border-border hover:border-primary/50 transition-colors">
+              <span class="font-medium text-foreground">API documentation</span><span class="text-primary font-semibold text-sm">£250–£1,000</span>
+            </div>
+            <div class="flex items-center justify-between p-4 bg-card rounded-lg border border-border hover:border-primary/50 transition-colors">
+              <span class="font-medium text-foreground">Custom dashboard UI</span><span class="text-primary font-semibold text-sm">£300–£2,000</span>
+            </div>
+            <div class="flex items-center justify-between p-4 bg-card rounded-lg border border-border hover:border-primary/50 transition-colors">
+              <span class="font-medium text-foreground">Priority 24/7 support</span><span class="text-primary font-semibold text-sm">Quote-based</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-12 bg-muted/50 border-t border-border">
+        <div class="mx-auto max-w-6xl px-6">
+          <p class="text-center text-muted-foreground max-w-3xl mx-auto">
+            All hosting is powered by Laravel Forge and scalable VPS servers. Pricing reflects both server costs and managed maintenance. Development packages and hosting plans can be combined or billed separately.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-primary-foreground" role="contentinfo" aria-label="Site footer">
+      <div class="mx-auto max-w-6xl px-6 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="space-y-6">
+            <h3 class="text-2xl font-bold">Waltham IT Solutions</h3>
+            <p class="text-primary-foreground/80 leading-relaxed">
+              Professional IT and networking solutions for home users, home offices, and small businesses in London Borough of Waltham Forest and Surrounding areas.
+            </p>
+            <div class="space-y-3">
+              <div class="flex items-center gap-3"><span class="w-5 text-secondary-light" aria-hidden="true">☎</span><span class="text-sm">+44 (0) 123 456 7890</span></div>
+              <div class="flex items-center gap-3"><span class="w-5 text-secondary-light" aria-hidden="true">✉</span><span class="text-sm">info@walthamitsolutions.co.uk</span></div>
+              <div class="flex items-center gap-3"><span class="w-5 text-secondary-light" aria-hidden="true">📍</span><span class="text-sm">London Borough of Waltham Forest &amp; Surrounding areas</span></div>
+            </div>
+          </div>
+
+          <div class="space-y-6">
+            <h4 class="text-lg font-semibold">Quick Links</h4>
+            <nav aria-label="Footer navigation">
+              <ul class="space-y-3">
+                <li><a class="text-primary-foreground/80 hover:text-secondary-light transition-colors text-sm" href="./index.html">Home</a></li>
+                <li><a class="text-primary-foreground/80 hover:text-secondary-light transition-colors text-sm" href="./services.html">Services</a></li>
+                <li><a class="text-primary-foreground/80 hover:text-secondary-light transition-colors text-sm" href="./about.html">About</a></li>
+                <li><a class="text-primary-foreground/80 hover:text-secondary-light transition-colors text-sm" href="./contact.html">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="space-y-6">
+            <h4 class="text-lg font-semibold">Our Services</h4>
+            <nav aria-label="Services navigation">
+              <ul class="space-y-3">
+                <li><a class="text-primary-foreground/80 hover:text-secondary-light transition-colors text-sm" href="./services-computer-support.html">Computer Support</a></li>
+                <li><a class="text-primary-foreground/80 hover:text-secondary-light transition-colors text-sm" href="./services-networking.html">Networking Solutions</a></li>
+                <li><a class="text-primary-foreground/80 hover:text-secondary-light transition-colors text-sm" href="./services-networking.html">Ubiquiti UniFi</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="space-y-6">
+            <h4 class="text-lg font-semibold">Connect With Us</h4>
+            <div class="flex gap-4">
+              <a class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-secondary-light transition-colors" href="#" aria-label="Facebook">f</a>
+              <a class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-secondary-light transition-colors" href="#" aria-label="Twitter">x</a>
+              <a class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-secondary-light transition-colors" href="#" aria-label="LinkedIn">in</a>
+              <a class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-secondary-light transition-colors" href="#" aria-label="Instagram">ig</a>
+            </div>
+            <div class="space-y-3">
+              <h5 class="font-medium">Business Hours</h5>
+              <div class="text-sm text-primary-foreground/80 space-y-1">
+                <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+                <p>Saturday: 9:00 AM - 4:00 PM</p>
+                <p>Sunday: Emergency Support Only</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-t border-white/20 mt-12 pt-8">
+          <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-sm text-primary-foreground/80">© <span id="currentYear"></span> Waltham IT Solutions. All rights reserved.</p>
+            <div class="flex gap-6 text-sm">
+              <a href="#" class="text-primary-foreground/80 hover:text-secondary-light transition-colors">Privacy Policy</a>
+              <a href="#" class="text-primary-foreground/80 hover:text-secondary-light transition-colors">Terms of Service</a>
+              <a href="#" class="text-primary-foreground/80 hover:text-secondary-light transition-colors">Cookie Policy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        var btn = document.getElementById("mobileMenuButton");
+        var menu = document.getElementById("mobileMenu");
+        var icon = document.getElementById("mobileMenuIcon");
+        if (!btn || !menu || !icon) return;
+        btn.addEventListener("click", function () {
+          var isOpen = !menu.classList.contains("hidden");
+          menu.classList.toggle("hidden", isOpen);
+          btn.setAttribute("aria-expanded", String(!isOpen));
+          icon.textContent = isOpen ? "☰" : "✕";
+        });
+      })();
+      (function () {
+        var el = document.getElementById("currentYear");
+        if (el) el.textContent = String(new Date().getFullYear());
+      })();
+    </script>
+  </body>
+</html>
