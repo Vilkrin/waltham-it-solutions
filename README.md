@@ -22,7 +22,7 @@ Waltham IT Solutions provides professional IT support and infrastructure service
 
 This website is built using:
 
-- Laravel 12
+- Laravel 13
 - Livewire 4
 - Tailwind CSS
 - Laravel Fortify
