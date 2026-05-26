@@ -1,0 +1,48 @@
+@import "tailwindcss";
+@import "../../vendor/livewire/flux/dist/flux.css";
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --font-sans:
+        "Instrument Sans", ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji", Roboto, Arial, "Noto Sans", "Liberation Sans",
+        sans-serif;
+    --color-background: hsl(0 0% 100%);
+    --color-foreground: hsl(210 11% 15%);
+
+    --color-primary: hsl(210 100% 20%);
+    --color-primary-foreground: hsl(0 0% 100%);
+    --color-primary-light: hsl(210 100% 25%);
+
+    --color-secondary: hsl(174 77% 35%);
+    --color-secondary-foreground: hsl(0 0% 100%);
+    --color-secondary-light: hsl(174 77% 45%);
+
+    --color-muted: hsl(210 20% 96%);
+    --color-muted-foreground: hsl(210 6% 46%);
+    --color-muted-dark: hsl(210 15% 85%);
+
+    --color-card: hsl(0 0% 100%);
+    --color-card-foreground: hsl(210 11% 15%);
+    --color-card-border: hsl(210 20% 90%);
+
+    --color-accent: hsl(174 77% 35%);
+    --color-accent-foreground: hsl(0 0% 100%);
+    --color-accent-hover: hsl(174 77% 30%);
+
+    --color-border: hsl(210 20% 90%);
+    --color-input: hsl(210 20% 96%);
+    --color-ring: hsl(174 77% 35%);
+
+    --color-success: hsl(142 76% 36%);
+    --color-warning: hsl(38 92% 50%);
+    --color-destructive: hsl(0 84% 60%);
+    --color-destructive-foreground: hsl(0 0% 100%);
+}
