@@ -20,7 +20,7 @@
           <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <article class="group rounded-xl border border-card-border bg-card hover:shadow-xl transition-all duration-300">
               <div class="p-6 text-center">
-                <div class="mx-auto mb-4 w-16 h-16 bg-gradient-to-br from-primary to-primary-light rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300" aria-hidden="true">
+                <div class="mx-auto mb-4 w-16 h-16 bg-linear-to-br from-primary to-primary-light rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300" aria-hidden="true">
                   <span class="text-primary-foreground text-2xl" aria-hidden="true">🖥</span>
                 </div>
                 <h2 class="text-xl font-semibold text-foreground">Computer Support &amp; Repairs</h2>

@@ -22,7 +22,7 @@
               <div class="rounded-xl border border-card-border bg-card hover:shadow-md transition-shadow">
                 <div class="p-6">
                   <div class="flex items-start gap-4">
-                    <div class="w-12 h-12 rounded-lg bg-linear-to-br from-primary to-primary-light flex items-center justify-center flex-shrink-0" aria-hidden="true">
+                    <div class="w-12 h-12 rounded-lg bg-linear-to-br from-primary to-primary-light flex items-center justify-center shrink-0" aria-hidden="true">
                       <span class="text-white text-xl" aria-hidden="true">☎</span>
                     </div>
                     <div class="flex-1">
@@ -40,7 +40,7 @@
               <div class="rounded-xl border border-card-border bg-card hover:shadow-md transition-shadow">
                 <div class="p-6">
                   <div class="flex items-start gap-4">
-                    <div class="w-12 h-12 rounded-lg bg-linear-to-br from-primary to-primary-light flex items-center justify-center flex-shrink-0" aria-hidden="true">
+                    <div class="w-12 h-12 rounded-lg bg-linear-to-br from-primary to-primary-light flex items-center justify-center shrink-0" aria-hidden="true">
                       <span class="text-white text-xl" aria-hidden="true">✉</span>
                     </div>
                     <div class="flex-1">
@@ -58,7 +58,7 @@
               <div class="rounded-xl border border-card-border bg-card hover:shadow-md transition-shadow">
                 <div class="p-6">
                   <div class="flex items-start gap-4">
-                    <div class="w-12 h-12 rounded-lg bg-linear-to-br from-primary to-primary-light flex items-center justify-center flex-shrink-0" aria-hidden="true">
+                    <div class="w-12 h-12 rounded-lg bg-linear-to-br from-primary to-primary-light flex items-center justify-center shrink-0" aria-hidden="true">
                       <span class="text-white text-xl" aria-hidden="true">📍</span>
                     </div>
                     <div class="flex-1">
@@ -76,7 +76,7 @@
               <div class="rounded-xl border border-card-border bg-card hover:shadow-md transition-shadow">
                 <div class="p-6">
                   <div class="flex items-start gap-4">
-                    <div class="w-12 h-12 rounded-lg bg-linear-to-br from-primary to-primary-light flex items-center justify-center flex-shrink-0" aria-hidden="true">
+                    <div class="w-12 h-12 rounded-lg bg-linear-to-br from-primary to-primary-light flex items-center justify-center shrink-0" aria-hidden="true">
                       <span class="text-white text-xl" aria-hidden="true">⏰</span>
                     </div>
                     <div class="flex-1">
