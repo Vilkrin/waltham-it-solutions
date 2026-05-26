@@ -12,7 +12,7 @@
               loading="eager"
             />
           </picture>
-          <div class="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-secondary/80"></div>
+          <div class="absolute inset-0 bg-linear-to-r from-primary/90 via-primary/70 to-secondary/80"></div>
         </div>
 
         <div class="relative z-10 mx-auto max-w-6xl px-4 md:px-6 text-center text-white">
@@ -56,7 +56,7 @@
 
           <div class="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
             <div class="text-center group">
-              <div class="mx-auto mb-3 w-12 h-12 bg-gradient-to-br from-primary to-primary-light rounded-lg flex items-center justify-center" aria-hidden="true">
+              <div class="mx-auto mb-3 w-12 h-12 bg-linear-to-br from-primary to-primary-light rounded-lg flex items-center justify-center" aria-hidden="true">
                 <span class="text-primary-foreground text-xl" aria-hidden="true">🖥</span>
               </div>
               <h3 class="text-lg font-semibold text-foreground mb-2">Computer Support &amp; Repairs</h3>
@@ -67,7 +67,7 @@
             </div>
 
             <div class="text-center group">
-              <div class="mx-auto mb-3 w-12 h-12 bg-gradient-to-br from-primary to-primary-light rounded-lg flex items-center justify-center" aria-hidden="true">
+              <div class="mx-auto mb-3 w-12 h-12 bg-linear-to-br from-primary to-primary-light rounded-lg flex items-center justify-center" aria-hidden="true">
                 <span class="text-primary-foreground text-xl" aria-hidden="true">📡</span>
               </div>
               <h3 class="text-lg font-semibold text-foreground mb-2">Networking Solutions</h3>

@@ -1,7 +1,7 @@
 <x-layouts.main :title="__('Pricing')">
 
       <!-- Hero -->
-      <section class="pt-24 md:pt-32 pb-12 md:pb-16 bg-gradient-to-br from-background via-muted/30 to-background">
+      <section class="pt-24 md:pt-32 pb-12 md:pb-16 bg-linear-to-br from-background via-muted/30 to-background">
         <div class="mx-auto max-w-6xl px-4 md:px-6 text-center">
           <h1 class="text-3xl md:text-5xl font-bold text-foreground mb-4 md:mb-6">Web Development &amp; Managed Laravel Hosting</h1>
           <p class="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-6 md:mb-8">

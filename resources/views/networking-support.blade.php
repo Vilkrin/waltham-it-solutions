@@ -22,7 +22,7 @@
               <article class="rounded-xl border border-card-border bg-card">
                 <div class="p-6">
                   <div class="flex items-center gap-4">
-                    <div class="w-12 h-12 bg-gradient-to-br from-primary to-primary-light rounded-lg flex items-center justify-center" aria-hidden="true">
+                    <div class="w-12 h-12 bg-linear-to-br from-primary to-primary-light rounded-lg flex items-center justify-center" aria-hidden="true">
                       <span class="text-primary-foreground" aria-hidden="true">📶</span>
                     </div>
                     <h2 class="text-xl font-semibold text-foreground">UniFi Network Design &amp; Installation</h2>
@@ -38,7 +38,7 @@
               <article class="rounded-xl border border-card-border bg-card">
                 <div class="p-6">
                   <div class="flex items-center gap-4">
-                    <div class="w-12 h-12 bg-gradient-to-br from-primary to-primary-light rounded-lg flex items-center justify-center" aria-hidden="true">
+                    <div class="w-12 h-12 bg-linear-to-br from-primary to-primary-light rounded-lg flex items-center justify-center" aria-hidden="true">
                       <span class="text-primary-foreground" aria-hidden="true">📷</span>
                     </div>
                     <h2 class="text-xl font-semibold text-foreground">UniFi Protect Surveillance</h2>
@@ -54,7 +54,7 @@
               <article class="rounded-xl border border-card-border bg-card md:col-span-2">
                 <div class="p-6">
                   <div class="flex items-center gap-4">
-                    <div class="w-12 h-12 bg-gradient-to-br from-primary to-primary-light rounded-lg flex items-center justify-center" aria-hidden="true">
+                    <div class="w-12 h-12 bg-linear-to-br from-primary to-primary-light rounded-lg flex items-center justify-center" aria-hidden="true">
                       <span class="text-primary-foreground" aria-hidden="true">📞</span>
                     </div>
                     <h2 class="text-xl font-semibold text-foreground">UniFi Talk – VoIP Systems</h2>
@@ -79,7 +79,7 @@
                 </div>
               </div>
 
-              <aside class="rounded-xl border border-card-border bg-gradient-to-br from-card to-muted p-6">
+              <aside class="rounded-xl border border-card-border bg-linear-to-br from-card to-muted p-6">
                 <div class="text-center">
                   <h3 class="text-2xl font-bold text-foreground">Ready for Professional Networking?</h3>
                   <p class="mt-2 text-muted-foreground text-sm">

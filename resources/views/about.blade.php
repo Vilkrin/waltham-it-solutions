@@ -72,7 +72,7 @@
 
             <div class="grid md:grid-cols-3 gap-8">
               <article class="rounded-xl border border-card-border bg-card p-6 text-center">
-                <div class="mx-auto mb-4 w-16 h-16 bg-gradient-to-br from-primary to-primary-light rounded-xl flex items-center justify-center" aria-hidden="true">
+                <div class="mx-auto mb-4 w-16 h-16 bg-linear-to-br from-primary to-primary-light rounded-xl flex items-center justify-center" aria-hidden="true">
                   <span class="text-primary-foreground text-2xl" aria-hidden="true">🛡</span>
                 </div>
                 <h3 class="text-xl font-semibold text-foreground">Trustworthy</h3>
@@ -81,7 +81,7 @@
                 </p>
               </article>
               <article class="rounded-xl border border-card-border bg-card p-6 text-center">
-                <div class="mx-auto mb-4 w-16 h-16 bg-gradient-to-br from-primary to-primary-light rounded-xl flex items-center justify-center" aria-hidden="true">
+                <div class="mx-auto mb-4 w-16 h-16 bg-linear-to-br from-primary to-primary-light rounded-xl flex items-center justify-center" aria-hidden="true">
                   <span class="text-primary-foreground text-2xl" aria-hidden="true">❤</span>
                 </div>
                 <h3 class="text-xl font-semibold text-foreground">Approachable</h3>
@@ -90,7 +90,7 @@
                 </p>
               </article>
               <article class="rounded-xl border border-card-border bg-card p-6 text-center">
-                <div class="mx-auto mb-4 w-16 h-16 bg-gradient-to-br from-primary to-primary-light rounded-xl flex items-center justify-center" aria-hidden="true">
+                <div class="mx-auto mb-4 w-16 h-16 bg-linear-to-br from-primary to-primary-light rounded-xl flex items-center justify-center" aria-hidden="true">
                   <span class="text-primary-foreground text-2xl" aria-hidden="true">🏆</span>
                 </div>
                 <h3 class="text-xl font-semibold text-foreground">Professional</h3>
