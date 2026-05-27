@@ -33,7 +33,7 @@
     <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
       <div class="mx-auto max-w-6xl px-6">
         <div class="flex h-16 items-center justify-between">
-          <a href="./index.html" class="text-2xl font-bold text-primary hover:text-primary-light transition-colors">
+          <a href="{{ route('home') }}" class="text-2xl font-bold text-primary hover:text-primary-light transition-colors">
             Waltham IT Solutions
           </a>
 
@@ -52,7 +52,7 @@
             </div>
             <a
               class="inline-flex items-center justify-center rounded-md bg-secondary px-4 py-2 text-sm font-semibold text-secondary-foreground shadow-sm hover:bg-accent-hover transition-colors"
-              href="./contact.html"
+              href="{{ route('contact') }}"
             >
               Get Support
             </a>
@@ -71,11 +71,11 @@
 
         <div id="mobileMenu" class="hidden md:hidden border-t border-border">
           <div class="py-4 space-y-4">
-            <a class="block py-2 text-foreground hover:text-primary transition-colors font-medium" href="./index.html">Home</a>
-            <a class="block py-2 text-foreground hover:text-primary transition-colors font-medium" href="./services.html">Services</a>
-            <a class="block py-2 text-foreground hover:text-primary transition-colors font-medium" href="./pricing.html">Pricing</a>
-            <a class="block py-2 text-foreground hover:text-primary transition-colors font-medium" href="./about.html">About</a>
-            <a class="block py-2 text-foreground hover:text-primary transition-colors font-medium" href="./contact.html">Contact</a>
+            <a class="block py-2 text-foreground hover:text-primary transition-colors font-medium" href="{{ route('home') }}">Home</a>
+            <a class="block py-2 text-foreground hover:text-primary transition-colors font-medium" href="{{ route('services') }}">Services</a>
+            <a class="block py-2 text-foreground hover:text-primary transition-colors font-medium" href="{{ route('pricing') }}">Pricing</a>
+            <a class="block py-2 text-foreground hover:text-primary transition-colors font-medium" href="{{ route('about') }}">About</a>
+            <a class="block py-2 text-foreground hover:text-primary transition-colors font-medium" href="{{ route('contact') }}">Contact</a>
 
             <div class="pt-4 border-t border-border space-y-3">
               <div class="flex items-center gap-2 text-sm text-muted-foreground">
@@ -84,7 +84,7 @@
               </div>
               <a
                 class="inline-flex w-full items-center justify-center rounded-md bg-secondary px-4 py-2 text-sm font-semibold text-secondary-foreground shadow-sm hover:bg-accent-hover transition-colors"
-                href="./contact.html"
+                href="{{ route('contact') }}"
               >
                 Get Support
               </a>
@@ -127,10 +127,10 @@
             <h4 class="text-lg font-semibold">Quick Links</h4>
             <nav aria-label="Footer navigation">
               <ul class="space-y-3">
-                <li><a class="text-primary-foreground/80 hover:text-secondary-light transition-colors text-sm" href="./index.html">Home</a></li>
-                <li><a class="text-primary-foreground/80 hover:text-secondary-light transition-colors text-sm" href="./services.html">Services</a></li>
-                <li><a class="text-primary-foreground/80 hover:text-secondary-light transition-colors text-sm" href="./about.html">About</a></li>
-                <li><a class="text-primary-foreground/80 hover:text-secondary-light transition-colors text-sm" href="./contact.html">Contact</a></li>
+                <li><a class="text-primary-foreground/80 hover:text-secondary-light transition-colors text-sm" href="{{ route('home') }}">Home</a></li>
+                <li><a class="text-primary-foreground/80 hover:text-secondary-light transition-colors text-sm" href="{{ route('services') }}">Services</a></li>
+                <li><a class="text-primary-foreground/80 hover:text-secondary-light transition-colors text-sm" href="{{ route('about') }}">About</a></li>
+                <li><a class="text-primary-foreground/80 hover:text-secondary-light transition-colors text-sm" href="{{ route('contact') }}">Contact</a></li>
               </ul>
             </nav>
           </div>
@@ -139,9 +139,9 @@
             <h4 class="text-lg font-semibold">Our Services</h4>
             <nav aria-label="Services navigation">
               <ul class="space-y-3">
-                <li><a class="text-primary-foreground/80 hover:text-secondary-light transition-colors text-sm" href="./services-computer-support.html">Computer Support</a></li>
-                <li><a class="text-primary-foreground/80 hover:text-secondary-light transition-colors text-sm" href="./services-networking.html">Networking Solutions</a></li>
-                <li><a class="text-primary-foreground/80 hover:text-secondary-light transition-colors text-sm" href="./services-networking.html">Ubiquiti UniFi</a></li>
+                <li><a class="text-primary-foreground/80 hover:text-secondary-light transition-colors text-sm" href=".{{ route('computer-support') }}">Computer Support</a></li>
+                <li><a class="text-primary-foreground/80 hover:text-secondary-light transition-colors text-sm" href="{{ route('networking-support') }}">Networking Solutions</a></li>
+                <li><a class="text-primary-foreground/80 hover:text-secondary-light transition-colors text-sm" href="{{ route('networking-support') }}">Ubiquiti UniFi</a></li>
               </ul>
             </nav>
           </div>
