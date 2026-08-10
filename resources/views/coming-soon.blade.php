@@ -1,14 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="h-full">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Waltham IT Solutions | Coming Soon</title>
 
-    <meta name="description" content="Waltham IT Solutions — IT support, web development, hosting and technology services for home users and small businesses in Waltham Forest and East London.">
+    {{-- Primary SEO --}}
+    <title>Waltham IT Solutions | IT Support & Web Development</title>
 
+    <meta
+        name="description"
+        content="Waltham IT Solutions provides reliable IT support, web development, hosting and technology services for home users and small businesses across Waltham Forest and East London."
+    >
+
+    <meta
+        name="keywords"
+        content="IT support Waltham Forest, IT support Walthamstow, computer support Walthamstow, web development Waltham Forest, website design Walthamstow, hosting Waltham Forest, small business IT support"
+    >
+
+    <meta name="author" content="Waltham IT Solutions">
+
+    <meta
+        name="robots"
+        content="index, follow"
+    >
+
+    <meta
+        name="googlebot"
+        content="index, follow"
+    >
+
+    {{-- Canonical URL --}}
+    <link
+        rel="canonical"
+        href="{{ url('/') }}"
+    >
+
+
+    {{-- Theme / Browser --}}
+    <meta
+        name="theme-color"
+        content="#020617"
+    >
+
+    <meta
+        name="color-scheme"
+        content="dark"
+    >
+
+
+    {{-- Open Graph --}}
+    <meta
+        property="og:type"
+        content="website"
+    >
+
+    <meta
+        property="og:site_name"
+        content="Waltham IT Solutions"
+    >
+
+    <meta
+        property="og:title"
+        content="Waltham IT Solutions | IT Support & Web Development"
+    >
+
+    <meta
+        property="og:description"
+        content="Reliable IT support, web development, hosting and technology services for home users and small businesses across Waltham Forest and East London."
+    >
+
+    <meta
+        property="og:url"
+        content="{{ url('/') }}"
+    >
+
+    <meta
+        property="og:locale"
+        content="en_GB"
+    >
+
+    <meta
+        property="og:image"
+        content="{{ asset('images/seo/waltham-it-solutions-og.jpg') }}"
+    >
+
+    <meta
+        property="og:image:alt"
+        content="Waltham IT Solutions"
+    >
+
+    <meta
+        property="og:image:width"
+        content="1200"
+    >
+
+    <meta
+        property="og:image:height"
+        content="630"
+    >
+
+
+    {{-- Twitter / X --}}
+    <meta
+        name="twitter:card"
+        content="summary_large_image"
+    >
+
+    <meta
+        name="twitter:title"
+        content="Waltham IT Solutions | IT Support & Web Development"
+    >
+
+    <meta
+        name="twitter:description"
+        content="Reliable IT support, web development, hosting and technology services across Waltham Forest and East London."
+    >
+
+    <meta
+        name="twitter:image"
+        content="{{ asset('images/seo/waltham-it-solutions-og.jpg') }}"
+    >
+
+    <meta
+        name="twitter:image:alt"
+        content="Waltham IT Solutions"
+    >
+
+    {{-- Application CSS --}}
     @vite(['resources/css/app.css'])
+
 </head>
 
 <body class="min-h-screen bg-slate-950 text-white antialiased">
