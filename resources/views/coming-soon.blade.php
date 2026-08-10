@@ -238,31 +238,66 @@
 
                         </div>
 
-
                         <div class="mt-10 border-t border-white/10 pt-7">
 
                             <p class="text-sm text-slate-500">
                                 Need help before we're live?
                             </p>
 
-                            <a href="mailto:contact@walthamitsolutions.co.uk"
-                               class="mt-2 inline-flex items-center gap-2 font-medium text-blue-400 transition hover:text-blue-300">
+                            <button
+                                type="button"
+                                onclick="copyEmail(this)"
+                                data-email="contact@walthamitsolutions.co.uk"
+                                class="group mt-2 inline-flex items-center gap-2 font-medium text-blue-400 transition hover:text-blue-300"
+                            >
+                                <span>
+                                    contact@walthamitsolutions.co.uk
+                                </span>
 
-                                contact@walthamitsolutions.co.uk
-
-                                <svg class="h-4 w-4"
-                                     fill="none"
-                                     viewBox="0 0 24 24"
-                                     stroke="currentColor">
-                                    <path stroke-linecap="round"
-                                          stroke-linejoin="round"
-                                          stroke-width="2"
-                                          d="M5 12h14m-6-6 6 6-6 6" />
+                                {{-- Clipboard icon --}}
+                                <svg
+                                    class="clipboard-icon h-4 w-4 transition"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                >
+                                    <rect x="9" y="9" width="13" height="13" rx="2" />
+                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
                                 </svg>
 
-                            </a>
+                                {{-- Success icon --}}
+                                <svg
+                                    class="success-icon hidden h-4 w-4 text-emerald-400"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                >
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m5 12 4 4L19 6" />
+                                </svg>
+                            </button>
 
                         </div>
+
+                        <script>
+                            function copyEmail(button) {
+                                const email = button.dataset.email;
+                                const clipboardIcon = button.querySelector('.clipboard-icon');
+                                const successIcon = button.querySelector('.success-icon');
+
+                                navigator.clipboard.writeText(email).then(() => {
+                                    clipboardIcon.classList.add('hidden');
+                                    successIcon.classList.remove('hidden');
+
+                                    setTimeout(() => {
+                                        clipboardIcon.classList.remove('hidden');
+                                        successIcon.classList.add('hidden');
+                                    }, 2000);
+                                });
+                            }
+                        </script>
+
 
                     </div>
 
