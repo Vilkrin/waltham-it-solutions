@@ -239,16 +239,16 @@
                         </div>
 
 
-                        {{-- <div class="mt-10 border-t border-white/10 pt-7">
+                        <div class="mt-10 border-t border-white/10 pt-7">
 
                             <p class="text-sm text-slate-500">
                                 Need help before we're live?
                             </p>
 
-                            <a href="mailto:hello@walthamitsolutions.co.uk"
+                            <a href="mailto:contact@walthamitsolutions.co.uk"
                                class="mt-2 inline-flex items-center gap-2 font-medium text-blue-400 transition hover:text-blue-300">
 
-                                hello@walthamitsolutions.co.uk
+                                contact@walthamitsolutions.co.uk
 
                                 <svg class="h-4 w-4"
                                      fill="none"
@@ -262,7 +262,7 @@
 
                             </a>
 
-                        </div> --}}
+                        </div>
 
                     </div>
 
