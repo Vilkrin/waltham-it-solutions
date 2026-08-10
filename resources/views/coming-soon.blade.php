@@ -248,7 +248,7 @@
                                 type="button"
                                 onclick="copyEmail(this)"
                                 data-email="contact@walthamitsolutions.co.uk"
-                                class="group mt-2 inline-flex items-center gap-2 font-medium text-blue-400 transition hover:text-blue-300"
+                                class="group mt-2 inline-flex items-center gap-2 font-medium text-blue-400 transition hover:text-blue-300 cursor-pointer"
                             >
                                 <span>
                                     contact@walthamitsolutions.co.uk
