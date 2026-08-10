@@ -1,4 +1,19 @@
-<x-layouts.main :title="__('Home')">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Waltham IT Solutions | Coming Soon</title>
+
+    <meta name="description" content="Waltham IT Solutions — IT support, web development, hosting and technology services for home users and small businesses in Waltham Forest and East London.">
+
+    @vite(['resources/css/app.css'])
+</head>
+
+<body class="min-h-screen bg-slate-950 text-white antialiased">
+
+    <main class="relative flex min-h-screen items-center justify-center overflow-hidden">
 
         {{-- Background decoration --}}
         <div class="absolute inset-0 overflow-hidden">
@@ -224,7 +239,7 @@
                         </div>
 
 
-                        <div class="mt-10 border-t border-white/10 pt-7">
+                        {{-- <div class="mt-10 border-t border-white/10 pt-7">
 
                             <p class="text-sm text-slate-500">
                                 Need help before we're live?
@@ -247,7 +262,7 @@
 
                             </a>
 
-                        </div>
+                        </div> --}}
 
                     </div>
 
@@ -271,4 +286,7 @@
 
         </div>
 
-    </x-layouts.main>
+    </main>
+
+</body>
+</html>
