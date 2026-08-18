@@ -26,6 +26,10 @@ Route::get('/pricing', function () {
     return view('pricing');
 })->name('pricing');
 
+Route::get('/project-submission', function () {
+    return view('project-submission');
+})->name('project-submission');
+
 Route::get('/computer-support', function () {
     return view('computer-support');
 })->name('computer-support');
